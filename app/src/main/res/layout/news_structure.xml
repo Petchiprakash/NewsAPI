@@ -26,8 +26,8 @@
             android:layout_marginBottom="8dp"
             android:layout_toStartOf="@id/newsImage"
             android:fontFamily="@font/helvetica_neue_condensed_obl"
-            android:textSize="16sp"
             android:textStyle="bold"
+            android:textSize="16sp"
             tools:text="@string/news_source" />
 
         <TextView

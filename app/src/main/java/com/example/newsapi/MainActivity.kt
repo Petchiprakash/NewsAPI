@@ -4,27 +4,37 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.newsapi.databinding.ActivityMainBinding
 import retrofit2.HttpException
 import java.io.IOException
+import java.util.*
 
 const val TAG = "MainActivity"
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var newsAdapter: NewsAdapter
+    private lateinit var query: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        setupRecyclerView()
+        query = ""
+        setupRecyclerView(query)
+        val text = binding.searchEt.text
+        binding.searchButton.setOnClickListener {
+            query=text.toString()
+            setupRecyclerView(query)
+        }
+    }
+
+    private fun setupRecyclerView(query:String) = binding.newsList.apply {
         lifecycleScope.launchWhenCreated {
             binding.progressBar.isVisible = true
             val response = try {
-                RetroInstance.api.getDataFromApi()
+                RetroInstance.api.getDataFromApi(q =query)
             } catch (e: IOException) {
                 Log.e(TAG, "IOException,you might not have Internet Connection")
                 binding.progressBar.isVisible = false
@@ -41,9 +51,7 @@ class MainActivity : AppCompatActivity() {
             }
             binding.progressBar.isVisible = false
         }
-    }
 
-    private fun setupRecyclerView() = binding.newsList.apply {
         newsAdapter = NewsAdapter(this@MainActivity)
         adapter = newsAdapter
         layoutManager = LinearLayoutManager(this@MainActivity)

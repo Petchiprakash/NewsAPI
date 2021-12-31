@@ -4,4 +4,12 @@
     <string name="news_title">NBA Top 10 Plays Of The Night | December 29, 2021 - NBA</string>
     <string name="news_source">News Source</string>
     <string name="image">image</string>
+    <string name="search_for_news_topics">Search for news,topics…</string>
+    <string name="connection_problem">Connection Problem!!</string>
+    <string name="news_content">The need to build better relationships with customers and understand the nuances of business in a more comprehensive manner is driving brands to focus more on vernacular content. The coming of new technologies such as voice interfaces is also helping to steer this trend forward. As per a report by Google, 90% of internet users prefer to use their local language to search and carry out tasks online.</string>
+    <string name="news_heading">News Heading .........</string>
+    <string name="newsSource">NewsSource</string>
+    <string name="time">time</string>
+    <string name="news_url">news Url</string>
+
 </resources>

@@ -1,6 +1,7 @@
 package com.example.newsapi
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.net.toUri
@@ -10,7 +11,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.newsapi.databinding.NewsStructureBinding
 
-class NewsAdapter(private val context: Context) : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
+class NewsAdapter(private val context: Context) :
+    RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
 
     inner class NewsViewHolder(val binding: NewsStructureBinding) :
         RecyclerView.ViewHolder(binding.root)
@@ -42,12 +44,30 @@ class NewsAdapter(private val context: Context) : RecyclerView.Adapter<NewsAdapt
     }
 
     override fun onBindViewHolder(holder: NewsViewHolder, position: Int) {
+        val articles = article[position]
         holder.binding.apply {
-            val articles = article[position]
             val media = articles.urlToImage?.toUri()
-            newsTitle.text = articles?.description
-            newsSource.text = articles?.source?.name
+            newsTitle.text = articles.description
+            newsSource.text = articles.source?.name
             Glide.with(context).load(media).into(newsImage)
+        }
+        holder.itemView.setOnClickListener {
+            val image = articles.urlToImage
+            val title = articles.title
+            val source = articles.source
+            val time = articles.publishedAt
+            val content = articles.content
+            val url = articles.url
+            val intent = Intent(context,NewsDetailsActivity::class.java)
+            intent.apply {
+                putExtra("image",image)
+                putExtra("title",title)
+                putExtra("source",source?.name)
+                putExtra("time",time)
+                putExtra("content",content)
+                putExtra("url",url)
+            }
+            context.startActivity(intent)
         }
     }
 
