@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NewsAPI</string>
+    <string name="title">NBA Top 10 Plays Of The Night | December 29, 2021 - NBA</string>
+    <string name="news_title">NBA Top 10 Plays Of The Night | December 29, 2021 - NBA</string>
+    <string name="news_source">News Source</string>
+    <string name="image">image</string>
+</resources>
