@@ -33,18 +33,18 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/txt_the_times_of_india"
+                android:id="@+id/txt_talk_sport"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/helvetica_neue_condensed_obl"
-                android:text="@string/the_times_of_india"
+                android:text="@string/talk_sport"
                 android:textSize="21sp"
                 android:textStyle="bold" />
 
             <CheckBox
-                android:id="@+id/cb_the_times_of_india"
+                android:id="@+id/cb_talk_sport"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:ignore="DuplicateSpeakableTextCheck" />
@@ -122,7 +122,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/cb_txt_business_insider"
+                android:id="@+id/txt_business_insider"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -133,7 +133,7 @@
                 android:textStyle="bold" />
 
             <CheckBox
-                android:id="@+id/business_insider"
+                android:id="@+id/cb_business_insider"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -144,7 +144,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/cb_txt_cnn"
+                android:id="@+id/txt_cnn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -155,7 +155,7 @@
                 android:textStyle="bold" />
 
             <CheckBox
-                android:id="@+id/cnn"
+                android:id="@+id/cb_cnn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
