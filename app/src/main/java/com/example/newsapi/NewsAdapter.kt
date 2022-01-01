@@ -35,7 +35,7 @@ class NewsAdapter(private val context: Context) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsViewHolder {
         return NewsViewHolder(
-            NewsStructureBinding.inflate(
+                   NewsStructureBinding.inflate(
                 LayoutInflater.from(
                     parent.context
                 ), parent, false

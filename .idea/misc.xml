@@ -3,15 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/algoe/StudioProjects/NewsAPI/app/src/main/res/drawable/bottom_sheet_background.xml" value="0.1175925925925926" />
+        <entry key="..\:/Users/algoe/StudioProjects/NewsAPI/app/src/main/res/drawable/button_background.xml" value="0.1175925925925926" />
+        <entry key="..\:/Users/algoe/StudioProjects/NewsAPI/app/src/main/res/drawable/ic_baseline_filter_alt_24.xml" value="0.1" />
+        <entry key="..\:/Users/algoe/StudioProjects/NewsAPI/app/src/main/res/drawable/ic_search_black.xml" value="0.1175925925925926" />
         <entry key="..\:/Users/algoe/StudioProjects/NewsAPI/app/src/main/res/drawable/image_rounded.xml" value="0.1" />
         <entry key="..\:/Users/algoe/StudioProjects/NewsAPI/app/src/main/res/drawable/search_view_background.xml" value="0.2786458333333333" />
         <entry key="..\:/Users/algoe/StudioProjects/NewsAPI/app/src/main/res/drawable/searchview_background.xml" value="0.15555555555555556" />
-        <entry key="..\:/Users/algoe/StudioProjects/NewsAPI/app/src/main/res/drawable/shape_rect01.xml" value="0.1037037037037037" />
+        <entry key="..\:/Users/algoe/StudioProjects/NewsAPI/app/src/main/res/drawable/shape_rect01.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/algoe/StudioProjects/NewsAPI/app/src/main/res/drawable/shape_rect02.xml" value="0.1037037037037037" />
-        <entry key="..\:/Users/algoe/StudioProjects/NewsAPI/app/src/main/res/layout/activity_main.xml" value="0.21839080459770116" />
-        <entry key="..\:/Users/algoe/StudioProjects/NewsAPI/app/src/main/res/layout/activity_news_details.xml" value="0.2111111111111111" />
+        <entry key="..\:/Users/algoe/StudioProjects/NewsAPI/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/algoe/StudioProjects/NewsAPI/app/src/main/res/layout/activity_news_details.xml" value="0.2289156626506024" />
+        <entry key="..\:/Users/algoe/StudioProjects/NewsAPI/app/src/main/res/layout/bottom_sheet_layout.xml" value="0.2159090909090909" />
         <entry key="..\:/Users/algoe/StudioProjects/NewsAPI/app/src/main/res/layout/layout.xml" value="0.15353260869565216" />
         <entry key="..\:/Users/algoe/StudioProjects/NewsAPI/app/src/main/res/layout/news_structure.xml" value="0.20955882352941177" />
+        <entry key="..\:/Users/algoe/StudioProjects/NewsAPI/app/src/main/res/menu-v26/app_bar_menu.xml" value="0.2625" />
+        <entry key="..\:/Users/algoe/StudioProjects/NewsAPI/app/src/main/res/menu/app_bar_menu.xml" value="0.25" />
       </map>
     </option>
   </component>

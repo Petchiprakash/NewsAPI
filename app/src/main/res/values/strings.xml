@@ -11,5 +11,14 @@
     <string name="newsSource">NewsSource</string>
     <string name="time">time</string>
     <string name="news_url">news Url</string>
+    <string name="the_times_of_india">The Times of India</string>
+    <string name="the_hindu">The Hindu</string>
+    <string name="tech_crunch">Tech Crunch</string>
+    <string name="bbc_sport">BBC Sport</string>
+    <string name="business_inside">Business Inside</string>
+    <string name="cnn">CNN</string>
+    <string name="filter_by_sources">Filter by sources</string>
+    <string name="apply">Apply</string>
+    <string name="location">Location</string>
 
 </resources>

@@ -18,16 +18,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="381dp"
-        android:layout_height="41dp"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/shape_rect01"
         android:gravity="center"
         android:orientation="horizontal"
-        android:background="@drawable/shape_rect01"
         app:layout_constraintBottom_toTopOf="@+id/newsList"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,24 +38,25 @@
             android:id="@+id/search_et"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="16dp"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
+            android:autofillHints="name"
+            android:background="@color/gray0"
             android:hint="@string/search_for_news_topics"
+            android:inputType="text"
             android:padding="10dp"
             android:textColor="@color/black"
-            android:textColorHint="@color/gray1"
-            android:autofillHints="name"
-            android:inputType="text" />
+            android:textColorHint="@color/gray1" />
 
         <ImageButton
             android:id="@+id/search_button"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginEnd="16dp"
             android:background="@drawable/shape_rect02"
-            app:tint="@color/black"
+            android:contentDescription="@string/image"
             android:src="@drawable/ic_search_black"
-            android:contentDescription="@string/image" />
+            app:tint="@color/black" />
 
     </LinearLayout>
 
@@ -70,6 +72,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:listitem="@layout/news_structure" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_margin="16dp"
+        app:fabSize="normal"
+        android:elevation="6dp"
+        android:src="@drawable/filter_01"
+        android:backgroundTint="@color/gray2"
+        app:layout_constraintBottom_toBottomOf="@+id/newsList"
+        app:layout_constraintEnd_toEndOf="@+id/newsList"
+        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintStart_toStartOf="@+id/newsList"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.998" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

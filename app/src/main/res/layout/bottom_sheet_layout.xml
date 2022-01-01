@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/filter_by_sources"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorDividerView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_the_times_of_india"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/helvetica_neue_condensed_obl"
+                android:text="@string/the_times_of_india"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/cb_the_times_of_india"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_the_hindu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/helvetica_neue_condensed_obl"
+                android:text="@string/the_hindu"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/cb_the_hindu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_techcrunch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/helvetica_neue_condensed_obl"
+                android:text="@string/tech_crunch"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/cb_techcrunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_bbc_sport"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/helvetica_neue_condensed_obl"
+                android:text="@string/bbc_sport"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/cb_bbc_sport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cb_txt_business_insider"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/helvetica_neue_condensed_obl"
+                android:text="@string/business_inside"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/business_insider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cb_txt_cnn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/helvetica_neue_condensed_obl"
+                android:text="@string/cnn"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/cnn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_background"
+        android:text="@string/apply"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</LinearLayout>

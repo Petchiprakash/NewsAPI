@@ -46,7 +46,8 @@
 
             <TextView
                 android:id="@+id/news_heading"
-                android:layout_width="match_parent"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
@@ -70,7 +71,7 @@
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="32dp"
                 android:text="@string/newsSource"
-                android:textSize="22sp"
+                android:textSize="20sp"
                 android:fontFamily="@font/helvetica_neue_condensed_obl"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -117,10 +118,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/news_url"
-                android:textColor="@color/black"
                 android:textSize="20sp"
-                android:fontFamily="@font/helvetica_neue_condensed_obl"
-                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
@@ -131,6 +130,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/news_content"
                 tools:layout_editor_absoluteY="480dp" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
